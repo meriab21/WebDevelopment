@@ -8,7 +8,9 @@ class App extends Component {
     super();
 
     this.state = {
-    monsters: []
+    monsters: [],
+    searchField: ''
+
   };
 }
 componentDidMount () {
@@ -20,13 +22,13 @@ componentDidMount () {
   render() { 
     const { monsters, searchField} = this.state;
     const filteredMonsters = monsters.filter(monsters =>
-       monsters.name.toLowerCase().includes(searchField)
+       monsters.name.toLowerCase().includes(searchField.toLowerCase())
     );
      return (
     <div className="App">
       <h1> Monsters Rolodex</h1>
       <SearchBox 
-        placeHolder='search monster'
+        placeHolder='Search Monster'
         handleChange={e => this.setState({ searchField: e.target.value} )}
         />
       <CardList monsters={filteredMonsters} />
