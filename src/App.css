@@ -4,6 +4,13 @@
 
 h1 {
   font-family: 'Bigelow Rule';
-  font-size: 72px;
+  font-size: 54px;
   color:#992a17;
+}
+h3{
+  color:#992a17;
+}
+p {
+  font-size: 15px;
+ 
 }

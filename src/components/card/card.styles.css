@@ -11,9 +11,10 @@
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
     margin-top: 20px;
+    max-width: 300px;
+    max-height: 400px;
   }
   
   .card-container:hover {
     transform: scale(1.05);
   }
-  
